@@ -1,0 +1,398 @@
+
+body, html {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background-color: #f3f2ee;
+}
+
+.container {
+    width: 975px;
+    margin: 0 auto;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+
+    height: 140px;
+}
+
+.header_logo {
+    height: fit-content;
+    margin: auto 0;
+
+    
+
+}
+
+.header_logo--name {
+    font-size: 12px;
+    font-family: "Verdana";
+    color: rgb(209, 67, 67);
+    text-transform: uppercase;
+    margin-bottom: -8px;
+}
+
+.header_logo--logo {
+    font-size: 50px;
+    font-family: 'BebasNeueBold';
+    font-weight: normal;
+    font-style: normal;
+    color: rgb(140, 140, 140);
+    text-transform: uppercase;
+    text-decoration: underline;
+
+    
+}
+
+
+  
+
+
+
+/* Section */
+.section {
+    margin-top: 60px;
+}
+
+.section_head {
+    font-size: 40px;
+    font-family: 'BebasNeueBold';
+    font-weight: normal;
+    font-style: normal;
+    color: rgb(209, 67, 67);
+    text-transform: uppercase;
+
+
+}
+
+.section_head:after {
+    content: "";
+    display: block;
+
+    width: 100%;
+    height: 3px;
+    background-color: #dfdedc;
+    margin-bottom: 15px;
+}
+  
+
+
+/* Nav */
+.nav {
+    display: flex;
+    height: fit-content;
+    margin: auto 0;
+}
+
+.nav_item {
+    margin-right: 15px;
+    
+    font-size: 22px;
+    font-family: 'BebasNeueBold';
+    font-weight: normal;
+    font-style: normal;
+    color: rgb(140, 140, 140);
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+
+/* Hello */
+
+
+.hello_text {
+    font-size: 60px;
+    font-family: "Myriad Pro";
+    color: rgb(140, 140, 140);
+    line-height: 0.917;
+    text-align: center;
+
+    margin-top: 60px;
+
+}
+
+.hello_text span {
+    font-weight: 500;
+}
+
+.hello_text p {
+    margin-top: 0px;
+}
+
+/* Colums */
+.columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.col--item {
+    width: 48%;
+}
+
+.about {
+    display: flex;
+}
+
+
+/* About */
+.about {
+
+}
+
+.about_img {
+    
+
+    margin-right: 15px;
+
+}
+
+.about_img img {
+    height: 100px;
+    width: 95px;
+}
+  
+.about_text {
+    font-size: 12px;
+    font-family: "Verdana";
+    color: rgb(140, 140, 140);
+    line-height: 1.417;
+}
+
+/* Skills */
+.skills_head {
+    font-size: 24px;
+    font-family: 'BebasNeueBold';
+    font-weight: normal;
+    font-style: normal;
+    color: rgb(140, 140, 140);
+    text-transform: uppercase;
+    margin-top: -5px;
+}
+
+.skills_text {
+    font-size: 12px;
+    font-family: "Verdana";
+    color: rgb(140, 140, 140);
+    line-height: 1.3;
+
+}
+
+.skills_text li:before {
+    content: "•";
+    color: #dc6565;
+    padding-right: 5px;
+
+    font-size: 15px;
+
+}
+
+.skills_text ul {
+    padding-left: 3px;
+    margin-top: 5px;
+    list-style: none;
+}
+
+
+/* Works */
+.works {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5px;
+    flex-wrap: wrap;
+}
+
+.works_item {
+    width: 23%;
+
+    margin-top: 15px;
+}
+
+.works_item--img {
+    width: 220px;
+    height: 130px;
+}
+
+.works_item--title {
+    font-size: 12px;
+    font-family: "Verdana";
+    color: rgb(140, 140, 140);
+
+    text-align: center;
+
+}
+
+
+  
+
+.works_nav {
+    text-align: right;
+    margin-top: -40px;
+
+    
+}
+
+.works_nav--item {
+    text-decoration: none;
+    font-size: 11px;
+    font-family: "Verdana";
+    color: rgb(140, 140, 140);
+    text-transform: uppercase;
+    padding-left: 10px;
+
+}
+
+
+/* Contacts */
+.contacts {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts_title {
+    font-size: 24px;
+    font-family: 'BebasNeueBold';
+    font-weight: normal;
+    font-style: normal;
+    color: rgb(140, 140, 140);
+}
+
+.contacts--col {
+    width: 48%;
+}
+
+.contacts_label {
+    font-size: 12px;
+    font-family: "Verdana";
+    color: rgb(140, 140, 140);
+
+    margin-top: 10px;
+}
+
+.contacts_input {
+    background-color: rgb(232, 232, 232);
+    border: 0;
+    box-shadow: 0.707px 0.707px 0px 0px rgba(255, 255, 255, 0.4),inset 0.707px 0.707px 0px 0px rgba(0, 0, 0, 0.2);
+    width: 220px;
+    height: 33px;
+    margin-top: 5px;
+}
+
+.contacts_input.message {
+    width: 460px;
+    height: 121px;
+
+}
+
+.contacts_send--btn {
+    width: 105px;
+    height: 41px;
+
+    margin-top: 20px;
+
+    font-size: 24px;
+    font-family: 'BebasNeueBold';
+    font-weight: normal;
+    font-style: normal;
+    color: rgb(255, 255, 255);
+
+    background-color: #d67575;
+
+    border: 0;
+
+}
+
+.contacts_img {
+    margin-top: 15px;
+}
+
+.contacts_info--title {
+    font-size: 12px;
+    font-family: "Verdana";
+    font-weight: bold;
+    color: rgb(140, 140, 140);
+
+    margin: 10px 0 8px;
+}
+
+.contacts_info--text {
+    font-size: 11px;
+    font-family: "Verdana";
+    color: rgb(140, 140, 140);
+
+    line-height: 1.545;
+
+}
+
+.contacts_info--text a {
+    color:#dc6565;
+}
+
+  
+
+
+
+
+  
+
+
+  
+
+
+  
+
+
+  
+  
+
+.contacts_img {
+    width: 60%;
+}
+
+.contacts_img--img {
+    width: 240px;
+    height: 200px;
+}
+
+
+.contacts_info {
+    width: 36%;
+}
+
+
+/* Footer */
+.footer {
+    margin: 40px 0 60px;
+}
+
+.footer_copywright {
+    font-size: 11px;
+    font-family: "Verdana";
+    color: rgb(140, 140, 140);
+
+    margin-top: -10px;
+}
+
+.footer_copywright a {
+    color:#dc6565;
+}
+
+  
+
+
+  
+
+
+  
+  
+
+  
+
+
+
+
+
