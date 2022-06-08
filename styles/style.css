@@ -9,7 +9,7 @@ body, html {
 }
 
 .container {
-    width: 975px;
+    width: 950px;
     margin: 0 auto;
 }
 
@@ -96,9 +96,18 @@ body, html {
     font-family: 'BebasNeueBold';
     font-weight: normal;
     font-style: normal;
-    color: rgb(140, 140, 140);
+    color: #bebebe;
+    
     text-transform: uppercase;
     text-decoration: none;
+
+    transition: .2s color rgb(140, 140, 140), 
+    0.2s underline;
+}
+
+.nav_item:hover {
+    color: rgb(140, 140, 140);
+    text-decoration: underline;
 }
 
 
@@ -109,7 +118,7 @@ body, html {
     font-size: 60px;
     font-family: "Myriad Pro";
     color: rgb(140, 140, 140);
-    line-height: 0.917;
+    line-height: 1;
     text-align: center;
 
     margin-top: 60px;
@@ -120,13 +129,12 @@ body, html {
     font-weight: 500;
 }
 
-.hello_text p {
-    margin-top: 0px;
-}
+
 
 /* Colums */
 .columns {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -145,15 +153,12 @@ body, html {
 }
 
 .about_img {
-    
-
     margin-right: 15px;
-
 }
 
 .about_img img {
-    height: 100px;
-    width: 95px;
+    width: 100%;
+    min-width: 100px;
 }
   
 .about_text {
@@ -164,6 +169,15 @@ body, html {
 }
 
 /* Skills */
+.skills {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills--col {
+    width: 48%;
+}
+
 .skills_head {
     font-size: 24px;
     font-family: 'BebasNeueBold';
@@ -207,14 +221,13 @@ body, html {
 }
 
 .works_item {
-    width: 23%;
+    width: 23.5%;
 
     margin-top: 15px;
 }
 
 .works_item--img {
-    width: 220px;
-    height: 130px;
+    width: 100%;
 }
 
 .works_item--title {
@@ -243,13 +256,17 @@ body, html {
     color: rgb(140, 140, 140);
     text-transform: uppercase;
     padding-left: 10px;
+}
 
+.works_nav--item:hover {
+    color: #dc6565;
 }
 
 
 /* Contacts */
 .contacts {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -277,13 +294,13 @@ body, html {
     background-color: rgb(232, 232, 232);
     border: 0;
     box-shadow: 0.707px 0.707px 0px 0px rgba(255, 255, 255, 0.4),inset 0.707px 0.707px 0px 0px rgba(0, 0, 0, 0.2);
-    width: 220px;
+    width: 98%;
     height: 33px;
     margin-top: 5px;
 }
 
 .contacts_input.message {
-    width: 460px;
+    width: 98%;
     height: 121px;
 
 }
@@ -303,7 +320,11 @@ body, html {
     background-color: #d67575;
 
     border: 0;
+    cursor: pointer;
+}
 
+.contacts_send--btn:hover {
+    background-color: #dc6565;
 }
 
 .contacts_img {
@@ -330,32 +351,14 @@ body, html {
 
 .contacts_info--text a {
     color:#dc6565;
-}
-
-  
-
-
-
-
-  
-
-
-  
-
-
-  
-
-
-  
-  
+}  
 
 .contacts_img {
     width: 60%;
 }
 
 .contacts_img--img {
-    width: 240px;
-    height: 200px;
+    width: 100%;
 }
 
 
@@ -379,6 +382,46 @@ body, html {
 
 .footer_copywright a {
     color:#dc6565;
+}
+
+
+
+@media (max-width:990px) {
+    .container {
+        width: 96%;
+    }
+
+    .hello_text {
+        font-size: 50px;
+    }
+
+    .works_item {
+        width: 32%;
+    }
+
+
+    .contacts_info--text a {
+        overflow-wrap: break-word;
+    } 
+
+    
+
+}
+
+
+@media (max-width: 770px) {
+    .hello_text {
+        font-size: 40px;
+    }
+    
+    .col--item {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .works_item {
+        width: 48%;
+    }
 }
 
   
