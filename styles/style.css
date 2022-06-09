@@ -149,7 +149,7 @@ body, html {
 
 /* About */
 .about {
-
+    display: flex;
 }
 
 .about_img {
@@ -171,6 +171,7 @@ body, html {
 /* Skills */
 .skills {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -410,6 +411,10 @@ body, html {
 
 
 @media (max-width: 770px) {
+    .header {
+        height: 80px;
+    }
+
     .hello_text {
         font-size: 40px;
     }
@@ -425,7 +430,74 @@ body, html {
 }
 
   
+@media (max-width: 550px) {
+    .header_logo--logo {
+        font-size: 35px;
+    }
 
+    .header_logo--name {
+        margin-bottom: -5px;
+    }
+
+    .about {
+        flex-wrap: wrap;
+    }
+
+
+    .about_img {
+        width: 80%;
+        margin: 0 auto 10px;
+    }
+
+    .about_text {
+        font-size: 14px;
+    }
+
+    .skills--col {
+        width: 98%;
+        margin-top: 15px;
+    }
+
+    .skills_head {
+        font-size: 30px;
+    }
+    
+    .skills_text {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .contacts_title {
+        font-size: 30px;
+    }
+
+    .contacts--col {
+        width: 100%;
+    }
+
+    .contacts_label {
+        font-size: 15px;
+    }
+
+    .hello_text {
+        font-size: 35px;
+    }
+
+    .works_item {
+        width: 96%;
+    }
+
+
+
+
+
+
+
+
+
+
+
+}
 
   
 
