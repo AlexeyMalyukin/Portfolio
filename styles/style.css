@@ -229,6 +229,7 @@ body, html {
 
 .works_item--img {
     width: 100%;
+    box-shadow: -6px 0px 11px -7px #000000, 7px 0px 5px -8px #000000, -1px -11px 6px 5px rgb(0 0 0 / 0%);
 }
 
 .works_item--title {
@@ -437,6 +438,11 @@ body, html {
 
     .header_logo--name {
         margin-bottom: -5px;
+    }
+
+
+    .nav {
+        display: none;
     }
 
     .about {
