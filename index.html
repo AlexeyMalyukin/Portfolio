@@ -168,24 +168,28 @@
             <div class="columns">
                 <div class="col--item">
                     <div class="contacts_title">Say Hi Online</div>
-                    <div class="contacts">
-                        <div class="contacts--col">
-                            <div class="contacts_label">Your name</div>
-                            <input type="text" class="contacts_input">
+                    <form action="" id="feedback-form">
+                        <div class="contacts">
+                            <div class="contacts--col">
+                                <div class="contacts_label">Your name</div>
+                                <input type="text" class="contacts_input" id="name">
+                            </div>
+                            <div class="contacts--col">
+                                <div class="contacts_label">Your e-mail</div>
+                                <input type="text" class="contacts_input" id="email">
+                            </div>
                         </div>
-                        <div class="contacts--col">
-                            <div class="contacts_label">Your e-mail</div>
-                            <input type="text" class="contacts_input">
+                        <div class="contacts-message">
+                            <div class="contacts_label">Message</div>
+                            <input type="text" class="contacts_input message" id="message">
                         </div>
-                    </div>
-                    <div class="contacts-message">
-                        <div class="contacts_label">Message</div>
-                        <input type="text" class="contacts_input message">
-                    </div>
+    
+                        <div class="contacts_send">
+                            <button class="contacts_send--btn" id="sendFrom">Send</button>
+                        </div>
+                    </form>
 
-                    <div class="contacts_send">
-                        <button class="contacts_send--btn">Send</button>
-                    </div>
+                    
 
 
                 </div>
@@ -232,6 +236,8 @@
             </div>
         </div>
     </footer>
+
     
+<script src="app.js"></script>
 </body>
 </html>

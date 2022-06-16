@@ -368,6 +368,15 @@ body, html {
     width: 36%;
 }
 
+.alert-message {
+    color: #dc6565;
+
+    margin-top: 2px;
+}
+
+.not-valid {
+    border: 1px solid #dc6565 !important;
+}
 
 /* Footer */
 .footer {
