@@ -53,16 +53,14 @@ sendFrom.addEventListener('click', (event) => {
         if(emailReqepx.test(email.value)) {
             alertEmail.classList = '';
             email.style.border = 'none';
+            email.nextSibling ? email.nextSibling.remove() : '';    
+        } else { 
             email.nextSibling ? email.nextSibling.remove() : '';
-            
-        } else {
             alertEmail.classList = 'alert-message';
-            alertEmail.innerHTML = 'Invalid email...';
+            alertEmail.innerHTML = 'Email is not valid, try format: example@mail.com';
             email.style.border = '1px solid #d14343';
             email.after(alertEmail);
             console.log('invalid email')
-
-            
         }
     }
 
