@@ -6,6 +6,7 @@ body, html {
     bottom: 0;
 
     background-color: #f3f2ee;
+    scroll-behavior: smooth;
 }
 
 .container {
@@ -15,10 +16,16 @@ body, html {
 
 /* Header */
 .header {
+
+    height: 140px;
+}
+
+.header_sec {
     display: flex;
     justify-content: space-between;
 
     height: 140px;
+    margin: auto 0;
 }
 
 .header_logo {
@@ -229,7 +236,9 @@ body, html {
 
 .works_item--img {
     width: 100%;
-    box-shadow: -6px 0px 11px -7px #000000, 7px 0px 5px -8px #000000, -1px -11px 6px 5px rgb(0 0 0 / 0%);
+    z-index: 2;
+    box-shadow: 0px 4px 15px -6px #000;;
+    /*box-shadow: -6px 0px 11px -7px #000000, 7px 0px 5px -8px #000000, -1px -11px 6px 5px rgb(0 0 0 / 0%);*/
 }
 
 .works_item--title {
@@ -302,18 +311,9 @@ body, html {
 }
 
 .contacts_input.message {
-    width: 98%;
+    max-width: 98%;
     height: 121px;
-
-}
-
-.contacts_input.message [input="text" i] {
-    word-wrap: break-word;
-}
-
-input [input=text] {
-    word-wrap: break-word;
-    word-break: break-all;
+    max-height: 250px;
 }
 
 .contacts_send--btn {
@@ -440,6 +440,7 @@ input [input=text] {
     border-radius: 5px;
     padding: 15px;
     transform: translate(-50%, -50%);
+   
 }
 
 .modal_title {

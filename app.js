@@ -1,3 +1,31 @@
+/*const listMenu = document.getElementsByClassName('nav_item');
+listMenu.each(i, el) = {
+    el.find
+    el.click(() => {
+
+    })
+
+
+} 
+
+const header = document.querySelector('.header');
+window.addEventListener('scroll', () => {
+    if(scrollY > 80) {
+        //header.style.position = 'fixed';
+        //header.style.background = '#fff';
+        header.setAttribute("style", "position:fixed; background-color: #fff; height: 60px; transform: translate(25%,-100%);")
+    } else {
+       //header.style.position = 'relative';
+        //header.style.background = '';
+        //header.style.heigth = '140px';
+        header.removeAttribute("style", "position:fixed; background-color: #fff; height: 60px; transform: translate(25%,-100%);")
+    }
+
+}) */
+
+
+
+
 const feedbackForm = document.querySelectorAll('#feedback-form');
 const sendFrom = document.querySelectorAll('#sendFrom')[0];
 
