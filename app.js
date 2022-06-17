@@ -1,6 +1,9 @@
 const feedbackForm = document.querySelectorAll('#feedback-form');
 const sendFrom = document.querySelectorAll('#sendFrom')[0];
 
+
+
+
 sendFrom.addEventListener('click', (event) => {
     event.preventDefault();
 
@@ -12,12 +15,26 @@ sendFrom.addEventListener('click', (event) => {
     const alertMessage = document.createElement('p');
     const alertEmail = document.createElement('p');
 
+    const modalHtml = `<div id="modal">
+<div class="overlay">
+    <div class="content">
+        <div class="modal_title">Form has been sent!</div>
+        <div class="modal_text">We will contact you soon...
+        <p> <span>Your name:</span> ${name.value}</p>
+        <p> <span>Your email:</span> ${email.value}</p>
+        <p> <span>Message:</span> ${message.value}</p>
+        </div>
+        <button class="modal_btn">Ok</button>
+    </div>
+</div>
+</div>`;
+
     const emailReqepx = new RegExp(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g);
     
     if(!name.value.length || name.value.length <3) { 
         name.nextSibling ? name.nextSibling.remove() : '';
         alertName.classList = 'alert-message';
-        alertName.innerHTML = 'Name too short...';
+        alertName.innerHTML = 'Name is too short...';
         //name.classList = 'not-valid';
         name.style.border = '1px solid #d14343';
         name.after(alertName);
@@ -31,7 +48,7 @@ sendFrom.addEventListener('click', (event) => {
     if(!message.value.length || message.value.length <3) { 
         message.nextSibling ? message.nextSibling.remove() : '';
         alertMessage.classList = 'alert-message';
-        alertMessage.innerHTML = 'Message too short...';
+        alertMessage.innerHTML = 'Message is too short...';
         //message.classList = 'not-valid';
         message.style.border = '1px solid #d14343';
         message.after(alertMessage);
@@ -60,10 +77,22 @@ sendFrom.addEventListener('click', (event) => {
             alertEmail.innerHTML = 'Email is not valid, try format: example@mail.com';
             email.style.border = '1px solid #d14343';
             email.after(alertEmail);
-            console.log('invalid email')
         }
     }
+    
+    if(alertName.classList == '' && alertMessage.classList == '' && alertEmail.classList == '') {
+        setTimeout(() => {
+            let dom = document.createElement('div');
+            dom.innerHTML = modalHtml;
+            document.getElementsByTagName('body')[0].appendChild(dom);
+            document.querySelector('.modal_btn').addEventListener('click', () => {
+                document.getElementsByTagName('body')[0].removeChild(dom);
+            })
+        }, 1000)
+    }
+    
 
+    
 
 
 
